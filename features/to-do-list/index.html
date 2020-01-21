@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>To Do list</title>
+    <link href="style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <h1 class="visually-hidden">To Do list</h1>
+    <ul class="todo-list">
+      <li class="todo-list-item">
+        <label>
+          <input class="todo-list-input" type="checkbox">
+          <span>Feed the cat</span>
+        </label>
+      </li>
+      <li class="todo-list-item">
+        <label>
+          <input class="todo-list-input" type="checkbox">
+          <span>Leave the country</span>
+        </label>
+      </li>
+      <li class="todo-list-item">
+        <label>
+          <input class="todo-list-input" type="checkbox">
+          <span>Get on the run</span>
+        </label>
+      </li>
+    </ul>
+    <p class="empty-tasks hidden">All tasks are completed. There are no new tasks.</p>
+    <form class="add-form" action="" method="post">
+      <input class="add-form-input" type="text"  aria-label="Task description" placeholder="For example, buy an elephant" required>
+      <button class="add-form-button" type="submit">Add task</button>
+    </form>
+
+    <template id="task-template">
+      <li class="todo-list-item">
+        <label>
+          <input type="checkbox" class="todo-list-input">
+          <span></span>
+        </label>
+      </li>
+    </template>
+    <script src="script.js"></script>
+  </body>
+</html>
